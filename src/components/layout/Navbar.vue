@@ -1,0 +1,262 @@
+<template>
+    <div :class="['navbar-area', { 'is-sticky': isSticky }]">
+        <div class="luvion-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <router-link class="navbar-brand" to="/">
+                        <img src="../../assets/images/logo2.png" style="width:120px" alt="image">
+                        <img src="../../assets/images/logo2.png" style="width:120px" alt="image">
+                    </router-link>
+
+                    <div class="navbar-toggler" @click="active = !active" :aria-pressed="active ? 'true' : 'false'"
+                        v-bind:class="{ 'active': button_active_state }"
+                        v-on:click="button_active_state = !button_active_state">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </div>
+
+                    <b-collapse class="collapse navbar-collapse" :class="{ show: active }" is-nav>
+                        <ul class="navbar-nav ml-auto" style="padding-right: 12px;"> 
+                            <li class="nav-item">
+                                <router-link to="/about-us" class="nav-link">
+                                    عن تعميد
+                                </router-link>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    استعراض المشاريع <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <router-link to="/" class="nav-link">
+                                            Home Demo - 1
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/home-demo-two" class="nav-link">
+                                            Home Demo - 2
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/home-demo-three" class="nav-link">
+                                            Home Demo - 3
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/home-demo-four" class="nav-link">
+                                            Home Demo - 4
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/home-demo-five" class="nav-link">
+                                            Home Demo - 5
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/home-demo-six" class="nav-link">
+                                            Home Demo - 6
+                                        </router-link>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    الصفقات /المزادات <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <router-link to="/projects" class="nav-link">
+                                            جميع الصفقات /المزادات
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/features-2" class="nav-link">
+                                            Features Style Two
+                                        </router-link>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <router-link to="/pricing" class="nav-link">
+                                    تمويل العقود
+                                </router-link>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    المركز الإعلامي <i class="fas fa-chevron-down"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <router-link to="/about-us" class="nav-link">
+                                            About Us
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">
+                                            Features <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <router-link to="/features-1" class="nav-link">
+                                                    Features Style One
+                                                </router-link>
+                                            </li>
+                                            <li class="nav-item">
+                                                <router-link to="/features-2" class="nav-link">
+                                                    Features Style Two
+                                                </router-link>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/team" class="nav-link">
+                                            Team
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/pricing" class="nav-link">
+                                            Pricing
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/login" class="nav-link">
+                                            Login
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/register" class="nav-link">
+                                            Register
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/faq" class="nav-link">
+                                            FAQ
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/error" class="nav-link">
+                                            Error Page
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/terms-condition" class="nav-link">
+                                            Terms & Conditions
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/privacy-policy" class="nav-link">
+                                            Privacy Policy
+                                        </router-link>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    Blog <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <router-link to="/blog-1" class="nav-link">
+                                            Blog Grid
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/blog-2" class="nav-link">
+                                            Blog Right Sidebar
+                                        </router-link>
+                                    </li>
+                                    <li class="nav-item">
+                                        <router-link to="/blog-details" class="nav-link">
+                                            Blog Details
+                                        </router-link>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="nav-item">
+                                <router-link to="/contact" class="nav-link">
+                                    نماذج العقود
+                                </router-link>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <router-link to="#" class="nav-link">
+                                    الإتصال بنا
+                                </router-link>
+                            </li>
+
+                            <li class="nav-item">
+                                <router-link to="#" class="nav-link">
+                                    نسخة تجريبية
+                                </router-link>
+                            </li>
+                            <li class="nav-item" >
+                                <router-link to="#" class="nav-link" style="box-shadow: rgb(240 240 240) 0px 1px 7px 1px;
+    padding: 2px;">
+                                    EN
+                                </router-link>
+                            </li>
+                            <li class="nav-item" style="padding-top: 5px;">
+                                <router-link to="/login" class="btn btn-logo"
+                                    style="    border-radius: 12px;
+                                            background-color: #e2a152;
+                                            color: white;display: inline-block;
+                                            font-weight: 400;
+                                            text-align: center;
+                                            text-decoration: none;
+                                            vertical-align: middle;
+                                            width:140px;
+                                            cursor: pointer;
+                                            -moz-user-select: none;
+                                            -ms-user-select: none;
+                                            user-select: none;
+                                            border: 1px solid transparent;
+                                        
+                                            font-size: 1rem;
+                                            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;">
+                                    تسجيل الدخول
+
+                                </router-link>
+                            </li>
+                        </ul>
+                    </b-collapse>
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'Navbar',
+    data() {
+        return {
+            isSticky: false,
+            active: false,
+            button_active_state: false
+        }
+    },
+
+    mounted() {
+        const that = this
+        window.addEventListener('scroll', () => {
+            let scrollPos = window.scrollY
+            if (scrollPos >= 100) {
+                that.isSticky = true
+            } else {
+                that.isSticky = false
+            }
+        })
+    }
+}
+
+</script>

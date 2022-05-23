@@ -2,8 +2,10 @@ import { createWebHistory, createRouter } from "vue-router";
 
 // All Pages
 import Projects from "../components/pages/Projects";
+import Profile from "../components/pages/Profile";
 import ProjectDetails from "../components/pages/ProjectDetails";
 import DealsAuctionsDetails from "../components/pages/DealsAuctionsDetails";
+import SubmitQuotes from "../components/pages/SubmitQuotes";
 import HomeDemoOne from "../components/pages/HomeDemoOne";
 import HomeDemoTwo from "../components/pages/HomeDemoTwo";
 import HomeDemoThree from "../components/pages/HomeDemoThree";
@@ -29,8 +31,10 @@ import TermsCondition from "../components/pages/TermsCondition";
 const routes = [
   { path: "/", component: HomeDemoOne },
   { path: "/projects", component: Projects },
+  { path: "/profile", component: Profile },
   { path: "/ProjectDetails", component: ProjectDetails },
   { path: "/deals-auctions-details", component: DealsAuctionsDetails },
+  { path: "/SubmitQuotes", component: SubmitQuotes },
   { path: "/home-demo-two", component: HomeDemoTwo },
   { path: "/home-demo-three", component: HomeDemoThree },
   { path: "/home-demo-four", component: HomeDemoFour },

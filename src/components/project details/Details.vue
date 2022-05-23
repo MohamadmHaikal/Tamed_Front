@@ -399,11 +399,11 @@
                                         </div>
                                         <div class="mt-3">
                                             20/100
-                                            <span class="fa fa-star " style="    font-size: 20px;" aria-hidden></span>
-                                            <span class="fa fa-star " style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="far fa-star " style="  color:#ffd203 ; font-size: 20px;" aria-hidden></span>
+                                            <span class="far fa-star " style="  color:#ffd203 ;  font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
                                         </div>
                                         <div class="row text-center mt-2">
                                             <div class="col-md-5 col-sm-2"

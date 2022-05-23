@@ -8941,7 +8941,16 @@ Footer Area CSS
         padding: 1px 0px;
 
     }
+    .tab .profile {
+        background-color: inherit;
+        float: right;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        width: 25%;
 
+    }
     .title {
 
         text-align: center;
@@ -8967,7 +8976,14 @@ Footer Area CSS
         padding: 7px 5px 7px 5px;
 
     }
+    .tab button.active-profile {
+        border-radius: 18px;
+        background-color: #039ca4;
+        color: white;
+        margin-top: 6px;
+        padding: 7px 5px 7px 5px;
 
+    }
     .paper {
         margin-left: 20px;
         border: 1px solid #019aa2;
@@ -9055,7 +9071,16 @@ Footer Area CSS
         width: 33%;
 
     }
+    .tab .profile {
+        background-color: inherit;
+        float: right;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        width: 25%;
 
+    }
     .tab button.active {
         border-radius: 18px;
         background-color: #039ca4;
@@ -9065,7 +9090,15 @@ Footer Area CSS
         padding: 7px 5px 7px 5px;
 
     }
+    .tab button.active-profile {
+        border-radius: 18px;
+        background-color: #039ca4;
+        width: 25%;
+        color: white;
+        margin-top: 6px;
+        padding: 7px 5px 7px 5px;
 
+    }
     .controls {
 
         left: 30px;

@@ -22,8 +22,8 @@
                                         background-color: #bbb;
                                         border-radius: 50%;
                                         display: inline-block;"></span>
-                                    <i class="fas fa-map-marker-alt	" style="color: #019aa2;font-size: 20px;
-    margin-right: 20px;"></i>
+                                    <i class="fas fa-map-marker-alt	"
+                                        style="color: #019aa2;font-size: 20px; margin-right: 20px;"></i>
                                     <span style=" margin-right: 6px;">الرياض - حي اليرموك</span>
                                     <span style="margin-bottom: 2px;
                                         margin-right: 12px;
@@ -362,9 +362,10 @@
                                             <i class="far fa-clock" style="color:#37D337;    font-size: 15px;"></i>
                                             12:00</span>
                                         <div style="text-align:center ;">
-                                            <a href="javascript:void(0);" class="btn btn-logo"
-                                                style="border-radius:16px;background-color:#039ca4; width:85%;color:white;margin-top:25px;padding:7px 30px 7px 30px;">تقديم
-                                                شراء للصفقة </a>
+                                            <router-link to="/SubmitQuotes" class="btn btn-logo"
+                                                style="border-radius:16px;background-color:#039ca4; width:85%;color:white;margin-top:25px;padding:7px 30px 7px 30px;">
+                                                تقديم
+                                                شراء للصفقة </router-link>
 
                                         </div>
                                         <div class="text-center mt-5">
@@ -394,18 +395,18 @@
 
 
                                         <div style="text-align:center ;">
-                                            <a href="javascript:void(0);" class="btn btn-logo"
+                                            <router-link to="/profile" class="btn btn-logo"
                                                 style=" border-radius: 9px; background-color: rgb(3, 156, 164);   width: 69%;   color: white; font-size: 90%; margin-top: 25px;  padding: 1px 23px;">
-                                                الملف الشخصي للمنشآة </a>
+                                                الملف الشخصي للمنشآة </router-link >
 
                                         </div>
                                         <div class="mt-3">
                                             20/100
-                                            <span class="fa fa-star " style="    font-size: 20px;" aria-hidden></span>
-                                            <span class="fa fa-star " style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
-                                            <span class="fa fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="far fa-star " style=" color:#ffd203 ;   font-size: 20px;" aria-hidden></span>
+                                            <span class="far fa-star " style="  color:#ffd203 ;  font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
+                                            <span class="fas fa-star checked" style="    font-size: 20px;"></span>
                                         </div>
                                         <div class="row text-center mt-2">
                                             <div class="col-md-5 col-sm-2"

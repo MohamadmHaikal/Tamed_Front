@@ -304,7 +304,7 @@
                                             </div>
 
                                             <div class="col-md-3">
-                                              <router-link class="btn btn-logo" to="/ProjectDetails" style="    border-radius: 16px;
+                                              <router-link class="btn btn-logo" to="/deals-auctions-details" style="    border-radius: 16px;
     background-color: #039ca4;
     color: white;
     margin-top: 25px;
